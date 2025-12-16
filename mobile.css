@@ -1,4 +1,4 @@
- * {
+  * {
   font-family: "Mozilla Headline", sans-serif;
   font-optical-sizing: auto;
   font-weight: weight;
@@ -311,8 +311,8 @@ left:40rem;
     
     /* MOBILE BACKGROUND CHANGE */
     body {
-        background-image: none; /* Removes the image */
-        background-color: #000000; /* Sets background to Black */
+        background-image: url(./assets/bg.jpg); /* Removes the image */
+        /* background-color: #000000; Sets background to Black */
     }
 
     /* NAVIGATION BAR */
@@ -372,10 +372,12 @@ left:40rem;
         width: 100%;
         height: auto;
         padding: 10px;
+        background-color: #000;
     }
     .aboutme {
         position: static;
         margin: 1rem auto;
+        
     }
     .aboutinfo {
         height: auto;
@@ -384,6 +386,7 @@ left:40rem;
         padding: 10px;
         font-size: 0.9rem;
         text-align: left;
+        display: wrap;
     }
 
     /* SKILLS SECTION */
@@ -401,7 +404,7 @@ left:40rem;
         padding: 0.7rem;
     }
     .frontend {
-        width: 100%;
+        width: 50%;
         height: auto;
         flex-direction: column;
         margin-top: 2rem;
@@ -426,12 +429,13 @@ left:40rem;
         padding: 10px;
     }
     .card1 {
-        width: 65%; /* Small card width */
+        width: 30%; /* Small card width */
         max-width: 250px;
-        height: auto;
-        margin: 1rem 0;
+        height: 15rem;
+        margin: 0.5rem ;
         text-align: center;
         padding: 10px;
+        font-size: 0.5rem;
     }
     .spytify {
         width: 100%;
@@ -454,4 +458,5 @@ left:40rem;
     .conicon {
         margin: 0.5rem;
     }
+     
 }
