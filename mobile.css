@@ -1,33 +1,26 @@
- * {
+  * {
   font-family: "Mozilla Headline", sans-serif;
   font-optical-sizing: auto;
   font-weight: weight;
   font-style: normal;
-  /* background-color: #091057; */
   padding: 0px;
   margin: 0px;
-  /* background-image:url(./assets/bgimg.jpg); */
-  
-  
 }
 body{
+     /* DESKTOP BACKGROUND (Image) */
      background-image:url(./assets/bg.jpg);
      background-size:cover;
      background-position: center;
      background-repeat: repeat;
      height: 100vh;
-    
 }
 
 i{
     color:aliceblue;
     padding-left: 10px;
-     /* background-color: #000; */
 }
 i:hover{
-      /* background-color: aliceblue; */
     color: #030303;
-
 }
 nav{
      position: sticky;
@@ -37,7 +30,6 @@ nav{
 }
  
 .navbar{
-    
     border : 2px solid black;
     display: flex;
     justify-content: space-between;
@@ -45,8 +37,6 @@ nav{
     height: 4.5rem;
     align-items: center;
     overflow: visible;
-   
-    
 }
 .navigation{
   border : 2px solid black;
@@ -56,12 +46,10 @@ nav{
   justify-content:space-evenly;
    background-color: #000;
    color:aliceblue;
-    
 }
 .section{
     display: inline-block;
      background-color: #000C;
-    
 }
  
 a{
@@ -97,8 +85,6 @@ a:hover{
    flex-direction: column;
    justify-content: center;
    align-items: center;
-   /* display: block; */
-    
 }
  .image img{
     border-radius: 50%;
@@ -113,10 +99,6 @@ a:hover{
     
      border-radius: 15px;
      padding-right: 0.5rem;
-     
-    
-
-    
  }
  #but{
     background-color: #000;
@@ -217,15 +199,12 @@ left:40rem;
  .front{
     margin-top: 0.3rem;
     border:2px solid black;
-    /* display: flex;
-    align-self: flex-start; */
     padding:1rem;
     background-color: rgb(186, 176, 255);
     border-radius:  0px 20px 20px 0px;
      font-weight: 900;
      font-size: 1.5rem;
      box-shadow: 5px 0px 2px aliceblue;
-     /* color: aliceblue; */
  }
  #skill{
     border:2px solid rgb(255, 255, 255);
@@ -245,6 +224,10 @@ left:40rem;
     width: 15rem;
     
  }
+ .sing{
+    height: 15rem;
+    width: 15rem;
+ }
  .card1{
     border:10px solid #181818;
     width: 15rem;
@@ -259,12 +242,32 @@ left:40rem;
     margin: 2rem;
 
  }
+ .card2{
+    border:10px solid #181818;
+    width: 15rem;
+    height: 25rem;
+    border-radius: 20px;
+    color: #ffffff;
+    font-weight: 400;
+    background-color: #121212;
+    padding: 1rem;
+    box-shadow: 5px 5px 10px #000b51;
+    display: inline-block;
+    margin: 2rem;
+ }
  .btn{
     color: #1db954;
     background-color: #181818;
     padding: 1rem;
     border-radius: 20px;
     box-shadow: 2px 4px 6px greenyellow;
+ }
+ .btn2{
+     color: #1db954;
+    background-color: #181818;
+    padding: 1rem;
+    border-radius: 20px;
+    box-shadow: 2px 4px 6px  #ffffff;
  }
  .contactouter{
      height: 30rem;
@@ -288,11 +291,9 @@ left:40rem;
     border-radius: 20px;
  }
  .contacticons{
-    /* display: inline-block; */
     display: flex;
     justify-content: center;
     align-items: center;
-    
  }
  .conicon{
     padding: 0.5rem;
@@ -327,3 +328,181 @@ left:40rem;
     background-color: #ffffff;
     color:#000;
  }
+
+
+/* --- MOBILE RESPONSIVENESS STYLES (Max Width: 768px) --- */
+@media (max-width: 768px) {
+    
+    /* MOBILE BACKGROUND CHANGE */
+    body {
+        background-image: url(./assets/bg.jpg); /* Removes the image */
+        /* background-color: #000000; Sets background to Black */
+    }
+
+    /* NAVIGATION BAR */
+    .navbar {
+        flex-direction: column;
+        height: auto;
+        padding-bottom: 10px;
+    }
+    .navigation {
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .navigation a {
+        font-size: 0.7rem;
+        padding: 5px;
+        margin: 5px 3px;
+        line-height: 1.1;
+    }
+    .portfolio {
+        font-size: 1.5rem;
+        padding-left: 0;
+        margin-top: 10px;
+    }
+    
+    /* HOME SECTION */
+    .homeee {
+        width: 90%;
+        margin: 2rem auto;
+        height: auto;
+        padding: 1rem;
+        text-align: center;
+    }
+    .image img {
+        height: 10rem;
+        width: 10rem;
+    }
+    .button {
+        position: static;
+        margin-top: 1rem;
+        right: auto;
+        top: auto;
+    }
+    h1 {
+        font-size: 1.5rem;
+        padding: 0.3rem;
+    }
+    h3 {
+        font-size: 0.9rem;
+    }
+    .homeee p {
+        font-size: 0.8rem;
+    }
+
+    /* ABOUT SECTION */
+    .outter {
+        width: 100%;
+        height: auto;
+        padding: 10px;
+        background-color: #000;
+    }
+    .aboutme {
+        position: static;
+        margin: 1rem auto;
+        
+    }
+    .aboutinfo {
+        height: auto;
+        width: 90%;
+        margin: 1rem auto;
+        padding: 10px;
+        font-size: 0.9rem;
+        text-align: left;
+        display: wrap;
+    }
+
+    /* SKILLS SECTION */
+    .skillssection {
+        width: 90%;
+        height: auto;
+        margin: 2rem auto;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+    #skill {
+        position: static;
+        margin: 1rem auto;
+        padding: 0.7rem;
+    }
+    .frontend {
+        width: 50%;
+        height: auto;
+        flex-direction: column;
+        margin-top: 2rem;
+        align-items: flex-start;
+        padding-left: 10px;
+    }
+    .front {
+        width: 95%;
+        margin-bottom: 10px;
+    }
+    .line {
+        width: 80%;
+        margin: 5px 0;
+        text-align: center;
+    }
+
+    /* PROJECT SECTION */
+    #project {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+    .card1 {
+        width: 30%; /* Small card width */
+        max-width: 250px;
+        height: 15rem;
+        margin: 0.5rem ;
+        text-align: center;
+        padding: 10px;
+        font-size: 0.5rem;
+    }
+    .spytify {
+        width: 100%;
+        height: auto;
+    }
+    .card2{
+         width: 30%; /* Small card width */
+        max-width: 250px;
+        height: 15rem;
+        margin: 0.5rem ;
+        text-align: center;
+        padding: 10px;
+        font-size: 0.5rem;
+    }
+    .sing{
+         width: 100%;
+        height: auto;
+     }
+
+     .btn {
+         padding: 0.5rem;
+         font-size: 0.7rem;
+     }
+      .btn2 {
+         padding: 0.5rem;
+         font-size: 0.7rem;
+     }
+
+    /* CONTACT SECTION */
+    .contactouter {
+        width: 90%;
+        height: auto;
+        margin: 2rem auto;
+        padding: 20px 10px;
+    }
+    .input {
+        width: 90%;
+    }
+    .contacticons {
+        margin-top: 1rem;
+    }
+    .conicon {
+        margin: 0.5rem;
+    }
+     
+}
